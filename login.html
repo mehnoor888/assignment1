@@ -8,40 +8,37 @@
     <script src="https://kit.fontawesome.com/6dc9eecb5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Login page</title>
-    <style>
-      body{
-        background-image: url("images/login.jpg");
-        
-      }
-    </style>
 </head>
 <body>
-  <h1 class="login--title">Login Form</h1>  
 
-  <div class="login--box">
+  <header class="header--login">
+    <h1 class="login--title">Login Form</h1>
+  </header>
 
-   <form action="#" class="login__form">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" class="login__form--uname" required>
-    <br>
-    <br>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" class="login__form--psw" required>
-    <br>
-    <br>
-    <label>
-      <input type="checkbox" checked="checked" name="remember" class="login__form--checkbox"> Remember me
-    </label>
-    <br>
-    <button type="submit" class="login__form--submit">Login</button>
-    <br>
-    <button type="button" class="login__form--cancel"><a href="index.html">Cancel</a></button>
-     <br>
-    <span class="login__form--createccount">Create <a href="register.html">account?</a></span>
-     
-   </form>
-   </div>
-
+  <div class="content--login background--image">
+    <div class="login--box">
+      <form action="#" class="login__form">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" class="login__form--uname" required>
+        <br>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" class="login__form--psw" required>
+        <br>
+        <br>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" class="login__form--checkbox"> Remember me
+        </label>
+        <br>
+        <button type="submit" class="login__form--submit">Login</button>
+        <br>
+        <button type="button" class="login__form--cancel"><a href="index.html">Cancel</a></button>
+         <br>
+        <span class="login__form--createccount">Create <a href="register.html">account?</a></span>
+         
+      </form>
+    </div>
+  </div>
 
    <footer class="footer">
     <img src="images/logo-icacie.png" alt="company logo" class="footer--logo">
@@ -49,7 +46,7 @@
         <h2 class="footer--middletext">12 DAYS SINCE ICACIE 2022</h2>
     </div>
           <form action="#" class="newsletter">
-            <input type="text" class="newsletter__input" placeholder="Email address"">
+            <input type="text" class="newsletter__input" placeholder="Email address">
             <button class="newsletter__button">Join</button>
         </form>
 
