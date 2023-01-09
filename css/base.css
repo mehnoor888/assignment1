@@ -1,0 +1,33 @@
+:root{
+    --colour-primary:rgb(0,171,189);
+    --colour-primary-light: rgb(0,183,199);
+    --colour-primary-dark:rgb(0,88,138);
+    --colour-footer:rgb(0,125,190);
+    --colour-blue-light: rgb(84,198,211);
+    --colour-grey-light:rgb(167,169,172);
+    --colour-grey-dark: rgb(99,100,102);
+    --colour-dark: rgb(35, 31, 32);
+
+}
+
+*,
+*::before,
+*::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+font-size: 75%;
+
+}
+
+body{
+    font-family: 'Optima', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+}
