@@ -129,67 +129,90 @@
                         TCS Research and Innovation, India
                    </h4>
 
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                   <p>Principal Scientist & Distinguished Engineer,
+                    TCS Research and Innovation, India<span id="dots">...</span>
+                     <span id="more"> Hemant is a Senior Member of IEEE and IARCS, holds MTech and Ph.D. 
+                        from IIT Bombay, India, and BE in EL&TCE from VSSUT Burla, Odisha. 
+                        He has close to 25 years of experience in academics, research, and
+                         industry. At present, Hemant is a Principal Scientist at TCS Research
+                          & Innovation, Bhubaneswar/ Bangalore. His research interests include
+                           Augmented Robotics, Fog computing, Mobile Edge computing, QoS in
+                            Networks, 5G Network Design, Software Defined Networks, Network 
+                            Security, etc. He has authored many research papers, co-authored
+                             a book, delivered several talks, and has more than 60 granted
+                              patents in the broad areas of communication and networking.
+                               Hemant has received several awards including the Distinguished 
+                               Engineer Award in TCS. He is active in national and international 
+                               standardization (IoT -ITU-T, GISFI, TSDSI, IEEE) in the areas of
+                                networking and communications. Hemant is also teaching at IIT 
+                                Bhubaneswar (School of Electrical Sciences) as an Adjunct Faculty
+                                 since July 2019.</span></p>
+                                 <button onclick="myFunction()" id="myBtn">Read more</button>
+
                     <p><b>Title of the talk: </b> Building Hyper-Connected Networks – the Future of Digital Transformation</p>
                 </div>
             </div>
             
             <br>
 
+            <h2>Keynote and Invited Speakers</h2>
+
+            
             <div class="keynote--speaker">
                 <img src="images/avatar2.jpg" alt="keynote speaker" class="keynote--image">
                 <div class="keynote--text">
-                    <h3>Hemant Kumar Rath</h3>
+                    <h3>Prasant Mohapatra</h3>
                     <h4>
-                        Principal Scientist & Distinguished Engineer,
-                        TCS Research and Innovation, India
+                        Vice-Chancellor for Research & Distinguished Professor of Computer Science, University of California, Davis, USA
+
+                        Fellow IEEE, Fellow AAAS
                     </h4>
 
-
                     <p>Principal Scientist & Distinguished Engineer,
-                        TCS Research and Innovation, India<span id="dots">...</span>
-                         <span id="more"> Hemant is a Senior Member of IEEE and IARCS, holds MTech and Ph.D. 
-                            from IIT Bombay, India, and BE in EL&TCE from VSSUT Burla, Odisha. 
-                            He has close to 25 years of experience in academics, research, and
-                             industry. At present, Hemant is a Principal Scientist at TCS Research
-                              & Innovation, Bhubaneswar/ Bangalore. His research interests include
-                               Augmented Robotics, Fog computing, Mobile Edge computing, QoS in
-                                Networks, 5G Network Design, Software Defined Networks, Network 
-                                Security, etc. He has authored many research papers, co-authored
-                                 a book, delivered several talks, and has more than 60 granted
-                                  patents in the broad areas of communication and networking.
-                                   Hemant has received several awards including the Distinguished 
-                                   Engineer Award in TCS. He is active in national and international 
-                                   standardization (IoT -ITU-T, GISFI, TSDSI, IEEE) in the areas of
-                                    networking and communications. Hemant is also teaching at IIT 
-                                    Bhubaneswar (School of Electrical Sciences) as an Adjunct Faculty
-                                     since July 2019.</span></p>
-                                     <button onclick="myFunction()" id="myBtn">Read more</button>
-
-
-                  
-                   
-
-
-                    <p><b>Title of the talk: </b> Building Hyper-Connected Networks – the Future of Digital Transformation</p>
+                        TCS Research and Innovation, India
+                        <br>
+                        <a href="https://faculty.engineering.ucdavis.edu/mohapatra/">Read more</a>
+        
                 </div>
-                
+             
             </div> 
-            
-            <br>
-            <!-- TESTING -->
+
+
+
             <div class="keynote--speaker">
-                <img src="images/avatar1.jpg" alt="keynote speaker" class="keynote--image">
+                <img src="images/avatar3.jpg" alt="keynote speaker" class="keynote--image">
                 <div class="keynote--text">
-                    <h3>TESTING</h3>
+                    <h3>Rajkumar Buyya</h3>
                    <h4>
-                        TESTING
+                    Director, Cloud Computing and Distributed Systems (CLOUDS) Lab,
+                    The University of Melbourne, Australia
+                    
+                    Fellow IEEE, Life Member of ACM, Redmond Barry Distinguished Professor of Computer Science and Software Engineering
                    </h4>
 
-                    <button onclick="myFunction()" id="myBtn">Read more</button>
-                    <p><b>Title of the talk: </b> TESTING – the Future of Digital Transformation</p>
+
+                   <p>CEO, Manjrasoft Pvt Ltd, Melbourne, Australia<span id="dots">...</span>
+                     <span id="more">
+                        Abstract: Computing is being transformed into a model consisting of services that
+                         are delivered in a manner similar to utilities such as water, electricity, gas, 
+                         and telephony. In such a model, users access services based on their requirements
+                          without regard to where the services are hosted or how they are delivered.
+                           The Cloud computing paradigm has turned this vision of “computing utilities”
+                            into a reality. It offers infrastructure, platform, and software as services,
+                             which are made available to consumers as subscription-oriented services.
+                              Cloud application platforms need to offer (1) APIs and tools for the rapid 
+                              creation of elastic applications and (2) a runtime system for the deployment
+                               of applications on geographically distributed Data Centre infrastructures 
+                               (with Quantum computing nodes) in a seamless manner.
+                        </span></p>
+                                 <button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+                    <p><b>Title of the talk: </b>Title of the talk: Neoteric Frontiers in Cloud, Edge, and Quantum Computing</p>
                 </div>
             </div>
+            
+            <br>
 
             
         </div>
@@ -220,7 +243,7 @@
     </div>
 </body>
 <script>
-    function myFunction() {
+    function myFunction() { 
       var dots = document.getElementById("dots");
       var moreText = document.getElementById("more");
       var btnText = document.getElementById("myBtn");
@@ -235,6 +258,22 @@
         moreText.style.display = "inline";
       }
     }
-    </script>
+
+    function myFunction2() { 
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn2");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
 
 </html>

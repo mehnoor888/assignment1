@@ -166,6 +166,93 @@ padding: 6px;
     font-size: small;
   }
 
+  
+  /*Links to social media icon*/
+
+  .social-btn {
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    left: -120px;
+    transition: left 1s;
+  }
+  .social-btn:hover {
+    left: -10px;
+    transition: left 1s;
+  }
+  
+  .social {
+    position: fixed;
+    top: 150px;
+  }
+  .social a {
+    text-decoration: none;
+  }
+  
+  .color-telegram {
+    background-color: #0084c6;
+  }
+  .color-instagram {
+    background-color: #f62782;
+  }
+  .color-whatsapp {
+    background-color: #24cc63;
+  }
+  
+
+.social p{
+  font-size: 1.25rem;
+}
+  
+  .social-btn img {
+    width: 40px;
+  }
+  
+  .social-btn p {
+    color: white;
+  
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .icons8-telegram-app {
+    order: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("images/fb.png");
+    background-size: 100%;
+  }
+
+  .icons8-instagram {
+    order: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("images/ig.png");
+    background-size: 100%;
+   }
+
+
+   .icons8-whatsapp {
+    order: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("images/in.png");
+    background-size: 100%;
+   }
+
 .footer{
   margin-top: auto;
 }
@@ -822,7 +909,6 @@ outline: 0;
         width: 200px;
         height: 200px;
         border-radius: 30%;
-        background-color: red;
         animation: animate 3s linear infinite;
         perspective: 900px;
 
@@ -852,9 +938,36 @@ outline: 0;
 .keynote--text{
   flex: 1;
   margin-left: 10rem;
-  border: 1px solid black;
+  border: 1px solid rgb(190, 190, 190);
   padding: 3rem;
 }
 
+
+/* #myBtn{
+  background-color: var(--colour-primary);
+  color:#f9f9f9;
+  padding:0.35rem;
+  text-decoration: none;
+  border:none;
+  font-size: 1rem;
+}
+
+#myBtn:hover{
+  background-color: var( --colour-primary-dark);
+} */
+
+
+
+
+.keynote--text a{
+  background-color: var(--colour-primary);
+  color:#f9f9f9;
+  padding:0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.keynote--text a:hover{
+background-color: var( --colour-primary-dark);
+}
 
 #more {display: none;}
