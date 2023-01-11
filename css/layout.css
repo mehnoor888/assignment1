@@ -17,7 +17,8 @@
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    /* height: 150rem; */
+    /* height: 160rem; */
+    margin: auto;
 }
 
 
@@ -42,23 +43,10 @@
 }
 
 .content--login{
-    /* height: 45rem; */
+    height: 50rem;
     /* padding-top: 3.5rem; */
     padding: 5rem;
   }
-
-/* Responsiveness */
-@media(max-width: 1000px){
-    .header--login{
-        margin: auto;
-    }
-
-    .footer{
-        flex-direction: column;
-        padding: auto;
-    }
-
-}
 
 
 
@@ -70,16 +58,17 @@
 }
 
 
-/* REGISTRAtION */
+/* REGISTRATION */
 .content--registration{
     /* height: 50rem; */
+    margin: auto;
 }
 
 
 
 /* Responsiveness */
 @media(max-width: 1000px){
-    .header--register{
+    .header--login, .header--register{
         margin: auto;
     }
 

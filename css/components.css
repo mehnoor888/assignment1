@@ -465,9 +465,7 @@ font-size: large;
 }
 
 .background--image--login{
-  background-image: url("/images/login.jpg");
-  max-width: 100%;
-  height: 100%;  
+  background-image: url("images/login.jpg");
 }
 
 
@@ -484,26 +482,7 @@ font-size: large;
   opacity: 0.8;
 }
 
-@media(max-width: 1000px){
-  .login--box{
-    width: 100%;
-  }
 
-  .footer--middletext--box{
-    margin: 0;
-    padding: auto;
-  }
-
-  .newsletter{
-    flex-direction: column;
-  }
-
-  .register--box{
-    width: 100%;
-    height: 55rem;
-  }
-
-}
 
 .login__form{
   font-size: 1.7rem;
@@ -801,9 +780,10 @@ font-size: large;
 /*content for plenary keynote speaker*/
 
 .content--keynote h2{
-  background: -webkit-linear-gradient(var(--colour-primary-dark), var( --colour-primary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(var(--colour-primary-dark), var( --colour-primary)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color:black;
   font-size: xx-large;
   animation-name: mymove;
   animation-duration: 5s;
@@ -907,4 +887,32 @@ background-color: var( --colour-primary-dark);
   border: 1px solid black;
   border-collapse: collapse;
   width:70%;
+}
+
+
+
+
+/* RESPONSIVENESS */
+@media(max-width: 1000px){
+  .login--box{
+    width: 100%;
+  }
+
+  .footer--middletext--box{
+    margin: 0;
+    padding: auto;
+  }
+
+  .newsletter{
+    flex-direction: column;
+  }
+
+  .register--box{
+    width: 100%;
+    height: 55rem;
+  }
+
+  .icon--home{
+    margin: auto;
+  }
 }
