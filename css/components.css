@@ -1,6 +1,6 @@
 .logo{
     height:3.5rem;
-    margin-left: 3rem;
+    padding-left: 3rem;
 }
 
 .search{
@@ -159,6 +159,10 @@ padding: 6px;
     }
    }
 
+   .banner--text:hover{
+    animation-play-state: paused;
+   }
+
    .banner--link{
     color: red;
     font-weight: bold;
@@ -167,127 +171,89 @@ padding: 6px;
   }
 
   
-  /*Links to social media icon*/
-
-  .social-btn {
-    display: flex;
-    width: 160px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 1px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-bottom: 5px;
-    position: relative;
-    left: -120px;
-    transition: left 1s;
-  }
-  .social-btn:hover {
-    left: -10px;
-    transition: left 1s;
-  }
-  
+ 
+/*links for css social media */
   .social {
     position: fixed;
-    top: 150px;
+    top: 250px;
   }
-  .social a {
-    text-decoration: none;
+  .social ul {
+    padding: 0px;
+    transform: translate(-270px, 0);
   }
-  
-  .color-telegram {
-    background-color: #0084c6;
+  .social ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
   }
-  .color-instagram {
-    background-color: #f62782;
+  .social ul li:hover {
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
   }
-  .color-whatsapp {
-    background-color: #24cc63;
+  .social ul li:hover a {
+    color: #000;
   }
-  
-
-.social p{
-  font-size: 1.25rem;
-}
-  
-  .social-btn img {
-    width: 40px;
+  .social ul li:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
   }
-  
-  .social-btn p {
-    color: white;
-  
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .social ul li i {
+    margin-left: 10px;
+    color: rgb(39, 176, 186);
+    background: #fff;
+    padding: 18px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    background: #ffffff;
+    transform: rotate(0deg);
   }
-  
-  .icons8-telegram-app {
-    order: 2;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: url("images/fb.png");
-    background-size: 100%;
-  }
-
-  .icons8-instagram {
-    order: 2;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background:url("images/ig.png");
-    background-size: 100%;
-   }
 
 
-   .icons8-whatsapp {
-    order: 2;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background:url("images/in.png");
-    background-size: 100%;
-   }
+  .social a{
+   
+      color: #fff;
+      text-decoration: none;
+    
+  }
 
-.footer{
-  margin-top: auto;
-}
+
 
 .footer--logo{
-  /* flex: 0 0 10%; */
   height: 3.5rem;
-  margin-left: 3rem;
-
 }
 
 .footer--middletext--box{
-  flex: 0 0 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .footer--middletext{
   border:1px solid white;
   color: var(--colour-primary-dark);
   background-color: var(--colour-grey-light);
-  margin-left: 4.5rem;
 }
 
 
 .newsletter{
-
-  margin-right: 5rem;
-
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
   
   .newsletter__input{
-    width: 100%;
     display: inline-block;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -308,8 +274,6 @@ padding: 6px;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
     border-radius: 2px;
     padding: 3px 10px;
-    margin-left: -8px;
-  
   }
 
 
@@ -375,15 +339,28 @@ padding: 6px;
   color:rgb(214, 214, 214);
 }
 
+.keynote{
+  padding: 2rem;
+}
 
-
-.keynote--image {
-
+.keynote--box{
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+  flex-wrap: wrap;
+}
 
+.keynote--img{
+  height: 15rem;
+}
+
+.keynote--name{
+
+}
+
+.speaker{
+  text-align: center;
+}
 
 /*Register page css*/
 
@@ -564,11 +541,6 @@ outline: 0;
 
 /*Login page css*/
 
-.header--login{
-  background-color: var(--colour-primary-light);
-  text-align: center;
-}
-
 .login--title{
   color: white;
   font-size: xx-large;
@@ -581,9 +553,9 @@ outline: 0;
 }
 
 .content--login{
-  height: 45rem;
-  padding-top: 3.5rem;
-  padding-left: 35rem;
+  /* height: 45rem; */
+  /* padding-top: 3.5rem; */
+  padding: 5rem;
 }
 
 .login--box{
@@ -592,9 +564,27 @@ outline: 0;
   border-radius: 10px;
   width: 45rem;
   height: 35rem;
-  padding-top: 3.5rem;
+  margin: auto;
+  padding: 2.5rem;
   cursor: pointer;
   opacity: 0.8;
+}
+
+@media(max-width: 1000px){
+  .login--box{
+    width: 100%;
+  }
+
+  .footer--middletext--box{
+    margin: 0;
+    padding: auto;
+  }
+
+  .newsletter{
+    flex-direction: column;
+  }
+
+
 }
 
 .login__form{
@@ -928,6 +918,7 @@ outline: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .keynote--image{

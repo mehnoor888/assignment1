@@ -17,16 +17,39 @@
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    height: 150rem;
+    /* height: 150rem; */
 }
 
 
 
 .footer{
     background-color: var(--colour-footer);
-    height:6rem;
     color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* LOGIN PAGE */
+
+.header--login{
+    background-color: var(--colour-primary-light);
+    text-align: center;
+}
+
+/* Responsiveness */
+@media(max-width: 1000px){
+    .header--login{
+        margin: auto;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding: auto;
+    }
+
 }
