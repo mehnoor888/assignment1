@@ -7,72 +7,63 @@
     <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6dc9eecb5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
-    <title>Login page</title>
-    <style>
-      body{
-        background-image: url("images/register.gif");
-        
-      }
-    </style>
+    <title>Register page</title>
 </head>
 <body>
-  <h1 class="register--title">Register Form</h1>  
 
-  <div class="register--box">
-
-   <form action="#" class="register__form">
-    <div class="fullname">
-      <label for="fname" class="register__form--fname--label"><b>Full Name</b></label>
-      <input type="text" placeholder="Enter Full Name" name="fname" class="register__form--fname--input" required>
-    </div>
-    
+  <header class="header--register">
+    <h1 class="register--title">Register Form</h1>
+  </header>
   
-    <div class="email">
-    <label for="Emailaddress" class="register__form--email--label"><b>Email Address</b></label>
-    <input type="text" placeholder="Enter Email Address" name="email" class="register__form--email--input" required>
+  <div class="content--register background--image--register">
+    <div class="icon--home"> <a href="index.html"><i class="fa-solid fa-house"></i></a></div>
    
-   </div>
-
-   <div class="occupation">
-    <label for="occupation" class="register__form--occupation--label"><b>Occupation</b></label>
-    <input type="text" placeholder="Enter Occupation" name="occupation" class="register__form--occupation--input" required>
+    <div class="register--box">
+      <form action="#" class="register__form">
+        <label for="fname"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter full name" name="fname" class="register__form--fullname" required>
+        <br>
+        <br>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" class="register__form--uname" required>
+        <br>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" class="register__form--psw" required>
+        <br>
+        <br>
+        <label for="email"><b>Email address</b></label>
+        <input type="text" placeholder="Enter email address" name="email" class="register__form--email" required>
+        <br>
+        <br>
+        <label for="occupation"><b>Occupation</b></label>
+        <input type="text" placeholder="Enter occupation" name="occupation" class="register__form--occupation" required>
+        <br>
+        <button type="submit" class="register__form--submit">Register</button>
+        <br>
+        <button type="button" class="register__form--cancel"><a href="index.html">Cancel</a></button>
+         <br>
+        <span class="register__form--createccount">Already have an <a href="login.html">account?</a></span>
+         
+      </form>
     </div>
-
-    <div class="username">
-    <label for="uname" class="register__form--username--label"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="usernsmr" class="register__form--username--input" required>
-    </div>
-   
-    <div class="password">
-    <label for="psw" class="register__form--password--label"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" class="register__form--password--input" required>
   </div>
-    
-    <br>
-    <button type="submit" class="register__form--submit">Register</button>
-    <br>
-    <button type="button" class="register__form--cancel"><a href="index.html">Cancel</a></button>
-     <br>
-    <span class="register__form--createccount">Already have an <a href="login.html">account?</a></span>
-     
-   </form>
-   </div>
-
 
    <footer class="footer">
-    <img src="images/logo-icacie.png" alt="company logo" class="footer--logo">
-    <div class="footer--middletext--box">
-        <h2 class="footer--middletext">12 DAYS SINCE ICACIE 2022</h2>
-    </div>
-          <form action="#" class="newsletter">
-            <input type="text" class="newsletter__input" placeholder="Email address"">
-            <button class="newsletter__button">Join</button>
-        </form>
-
+      <img src="images/logo-icacie.png" alt="company logo" class="footer--logo">
+      
+      <div class="footer--middletext--box">
+          <h2 class="footer--middletext">12 DAYS SINCE ICACIE 2022</h2>
+      </div>
+      <form action="#" class="newsletter">
+        <input type="text" class="newsletter__input" placeholder="Email address">
+        <button class="newsletter__button">Join</button>
+      </form>
     </footer>
-          <div class="copyright">
-          <p class="copyright__p">Copyright &copy 2022; Powered By Mehnoor. All rights reserved</p>
-          </div>
+
+    <div class="copyright">
+      <p class="copyright__p">Copyright &copy; 2022; Powered By Mehnoor. All rights reserved</p>
+    </div>
 
 </body>
 </html>

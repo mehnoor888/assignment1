@@ -41,9 +41,45 @@
     text-align: center;
 }
 
+.content--login{
+    /* height: 45rem; */
+    /* padding-top: 3.5rem; */
+    padding: 5rem;
+  }
+
 /* Responsiveness */
 @media(max-width: 1000px){
     .header--login{
+        margin: auto;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding: auto;
+    }
+
+}
+
+
+
+/* REGISTER PAGE */
+
+.header--register{
+    background-color: var(--colour-primary-light);
+    text-align: center;
+}
+
+
+/* REGISTRAtION */
+.content--registration{
+    /* height: 50rem; */
+}
+
+
+
+/* Responsiveness */
+@media(max-width: 1000px){
+    .header--register{
         margin: auto;
     }
 
