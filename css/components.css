@@ -381,7 +381,7 @@ font-size: large;
 }
 
 .background--image--register{
-  background-image: url("/images/register.jpg");
+  background-image: url("../images/register.jpg");
   max-width: 100%;
   height: 100%;  
 }
@@ -465,7 +465,7 @@ font-size: large;
 }
 
 .background--image--login{
-  background-image: url("images/login.jpg");
+  background-image: url("../images/login.jpg");
 }
 
 
@@ -864,31 +864,55 @@ background-color: var( --colour-primary-dark);
 
 
 /*Registration page css*/
-.content--registration--image{
-  margin:auto;
-  flex:1;
-}
-
-.content--registration--text{
-  margin:auto;
-  flex:1;
-}
 
 
-
-.content--registration{
+.registration--detail--box{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /* background-color: black; */
 }
 
-.table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.registration--image{
+  /* height: 25rem; */
+  flex: 0 0 20%;
+}
+
+.registration--text--box{
+  flex: 1;
+  text-align: center;
+  padding: 5rem;
+  /* background-color: black; */
+}
+
+.registration--text{
+  margin:auto;
+}
+
+
+
+
+
+.registration--table--box{
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  /* background-color: black; */
+}
+
+.registration--table{
+  text-align: center;
   width:70%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size:larger;
+  margin-left: 10%;
 }
 
+.registration--table td, .registration--table th {
+  border: 1px solid;
+}
 
 
 
