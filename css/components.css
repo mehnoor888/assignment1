@@ -881,15 +881,23 @@ background-color: var( --colour-primary-dark);
 
 .registration--text--box{
   flex: 1;
-  text-align: center;
+  text-align: left;
   padding: 5rem;
   /* background-color: black; */
 }
 
+
+.registration--title{
+  font-size: 4rem;
+  text-decoration:underline;
+}
 .registration--text{
   margin:auto;
+  
 }
-
+.content--registration--text{
+  font-size: 1.75rem;
+}
 
 
 
@@ -903,16 +911,155 @@ background-color: var( --colour-primary-dark);
 
 .registration--table{
   text-align: center;
-  width:70%;
+  width:90%;
   border-collapse: collapse;
   border: 1px solid black;
-  font-size:larger;
-  margin-left: 10%;
+  font-size:2rem;
+  margin-left: 3%;
 }
 
 .registration--table td, .registration--table th {
   border: 1px solid;
 }
+
+.registration--fee p{
+  color: var(  --colour-primary);
+  font-size:2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.registration--fee h3{
+  color: var( --colour-primary-dark);
+  font-size:2rem;
+
+}
+
+.registration--fee h2{
+  color: var( --colour-grey-dark);
+  font-size:1.5rem;
+
+}
+
+
+.author--registration--foreigner h3{
+  color: var( --colour-primary-dark);
+  font-size:2rem;
+
+}
+
+.author--registration--foreigner h2{
+  color: var( --colour-grey-dark);
+  font-size:1.5rem;
+
+
+}
+.author--registration--indian{
+  text-decoration: underline;
+}
+
+.author--registration--foreigner p{
+  text-decoration: underline;
+  color: var(  --colour-primary);
+  font-size:2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.columns--registration {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price--registration {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price--registration:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price--registration .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price--registration li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.price--registration .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button--registration {
+  background-color: var( --colour-primary-light);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button--registration:hover{
+  background-color: var(   --colour-primary-dark);
+}
+
+.seperator--registration.hr{
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  
+ 
+}
+.registration--fee-mode h1{
+color:var(--colour-primary-dark);
+font-size: 3rem;
+
+}
+
+.registration--fee-mode li{
+  color:var(--colour-grey-dark);
+  font-size: 2rem;
+  
+  }
+
+  .registration--bankdetails--table{
+    text-align: left;
+    width:90%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-size:2rem;
+    margin-left: 3%;
+  }
+  
+  .registration--bankdetails--table td, .registration--bankdetails--table th {
+    border: 1px solid;
+  }
+  
+  .registration--bankdetails--table-info {
+    background-color: var(--colour-primary-dark);
+    color: var(--colour-grey-light);
+  }
+
+
+
+
+
+
 
 
 
