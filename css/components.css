@@ -1109,7 +1109,99 @@ font-size: 3rem;
 
 
 
+/* CONTACT PAGE */
+.contact--title{
+  padding: 1rem;
+}
 
+.contact--icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(227, 244, 255);
+  padding:1rem;
+}
+
+.icon--box{
+  flex: 1;
+  color:rgb(74, 204, 248);
+  text-align: center;
+  
+}
+
+.icon--box:hover{
+  font-size: 1.2rem;
+  transition: all .5s ease-in-out;
+}
+
+.icon--box p{
+  color:rgb(52, 52, 52);
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.form--contact{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+
+.form--image{
+  flex:0 0 30%;
+
+}
+
+.form__textarea{
+  width:20rem;
+  height:10rem;
+}
+
+.content--contact{
+background-color: rgb(249, 249, 249);
+
+}
+
+.content--contact h1{
+  text-align: center;
+  color:rgb(22, 131, 145);
+}
+
+
+.form--contact--input{
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0.6rem;
+}
+
+.form--contact--input:focus{
+  outline: none;
+  border-bottom: 2px solid rgb(0, 143, 175);
+  background-color: rgb(224, 254, 255);
+}
+
+
+.form--contact--button{
+
+  width:100%;
+  background-color: rgb(0, 83, 94);
+  border:none;
+  color:white;
+  border-radius:4px;
+  padding:10px;
+  font-size:25px;
+
+}
+.form--contact--button:hover{
+  background-color: rgb(0, 94, 47);
+  color:rgb(145, 227, 145);
+}
 
 
 
@@ -1138,4 +1230,18 @@ font-size: 3rem;
   .icon--home{
     margin: auto;
   }
+
+  /* CONTACT */
+  .form--image{
+    margin-top: 2rem;
+  }
+
+  .contact--icon{
+    flex-direction: column;
+  }
+
+  .icon--box{
+    padding: 1rem;
+  }
+  
 }
