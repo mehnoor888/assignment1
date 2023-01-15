@@ -293,6 +293,19 @@ padding: 6px;
   flex: 1;
 }
 
+.date--countdown--box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+#date{
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: large;
+}
 
 .content--box{
   font-weight: bold;
