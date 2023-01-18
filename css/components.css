@@ -243,6 +243,11 @@ padding: 6px;
   border:1px solid white;
   color: var(--colour-primary-dark);
   background-color: var(--colour-grey-light);
+
+}
+.footer--middletext a{
+  text-decoration: none;
+  color:  var(--colour-primary-dark);
 }
 
 
@@ -1217,25 +1222,292 @@ background-color: rgb(249, 249, 249);
 }
 
 
-/* TRAVEL PAGE */
-.travel--images{
-  padding:50px;
+/* Accomodation PAGE */
+
+.content--accomo{
+ 
 
 }
 
-.travel--title{
+.accomo--images{
+  padding:50px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.accomo--title{
   text-align: center;
   font-size: 40px;
   color:rgb(11, 124, 156);
   font-weight: bold;
 }
 
-.travel--subtitle{
+.accomo--subtitle{
   text-align: center;
   font-size: 25px;
   color:rgb(74, 74, 74);
 
 }
+
+.hotel--box{
+  /* display:flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.hotel--box-text{
+  background-color: var(--colour-grey-light);
+  text-align: center;
+  width:27rem;
+  height:5rem;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:var(--colour-dark);
+  padding:5px;
+}
+
+.hotel--link-map{
+  text-align: center;
+  border:1px solid black;
+  background-color: white;
+  padding:0.9rem;
+  width: 25rem;
+  margin-left: 30px;
+  margin-top: 3%;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+.hotel--link-map:a{ 
+  text-align: none;
+}
+
+.hotel--a{
+text-decoration: none;
+color:var(--colour-primary-light);
+}
+
+.hotel--a:hover{
+  color:white;
+}
+
+.hotel--link-map:hover{
+  background-color: black;
+
+}
+
+
+/*VENUE PAGE*/
+
+.button--venue{
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color:var( --colour-footer);
+padding: 10px 30px;
+border: 2px solid var( --colour-footer);
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+margin-left: 60rem;
+}
+
+.button--venue:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: var( --colour-footer);
+border: solid 1px var( --colour-footer);
+}
+
+.button--venue a{
+text-decoration: none;
+color:white;
+}
+
+.button--venue a:hover{
+  text-decoration: none;
+  color:var(--colour-footer);
+  }
+  
+
+
+.divider{
+  width: 90%;
+	height: 2px;
+  margin-left: 60px;
+	transform: skew(20deg);
+	background-color: var(--colour-grey-light);
+}
+
+.conferencevenue--venue{
+  text-align: center;
+}
+
+.conferencevenue--venue h1{
+  font-weight:bold;
+  color:var(--colour-primary);
+  font-size:xx-large;
+}
+
+.conferencevenue--venue h2{
+  font-weight:bold;
+  color:var(--colour-footer);
+  font-size:x-large;
+}
+
+
+.conferencevenue--venue p{
+font-size:1.7rem;
+text-align: left;
+padding:4%;
+
+}
+
+
+.conferencevenue--venue span{
+color:rgb(190, 0, 0);
+  
+  }
+
+
+  /*SIGHSEEING PAGE CSS*/
+
+  .sightseeing--title{
+    text-align: center;
+  }
+
+  .sightseeing--title h1{
+    font-size: 4rem;
+  }
+
+  .sightseeing--title h3{
+    font-size: 2rem;
+  }
+
+  .sightseeing--box{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60rem;
+  }
+
+  .sightseeing--card{ 
+    /* flex-grow: 1; */
+    flex: 20%;
+    box-shadow: 10px -10px 5px #CCC;
+    border-radius: 10px;
+    height:55rem;
+    /* width:1rem; */
+    text-align: center;
+   }
+
+   .sightseeing--card h1{
+    padding:3px;
+    font-size: 2rem;
+    color:var(--colour-footer);
+   }
+
+   
+   .sightseeing--card h3{
+    padding:3px;
+    font-size: larger;
+    color:var(--colour-grey-dark);
+   }
+
+   .sightseeing--images{
+    border-radius: 10px 10px 0px 0px;
+   }
+
+  .sightseeing__links{
+    text-decoration: none;
+    background-color:var(--colour-primary);
+    color:white;
+    padding: 7px;
+    font-size: 2rem;
+    border-radius: 10px;
+
+  }
+
+  .sightseeing__links:hover{
+    background-color: var(--colour-primary-dark);
+  }
+
+
+/*TRAVEL PAGE CSS*/
+
+.content--travel h1{
+color:var(--colour-footer);
+font-size: 3rem;
+text-align: center;
+
+}
+
+
+.content--travel h2{
+  color:var(--colour-primary-dark);
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--colour-grey-light);
+
+  }
+
+  .content--travel p{
+    color:var(--colour-grey-dark);
+    font-size: 2rem;
+    text-align: center;
+    padding:30px;
+    }
+
+    .content--travel {
+      color:rgb(42, 42, 42);
+      font-size: 1.5rem;
+      text-align: center;
+   
+      }
+      .content--travel span {
+        color:red;
+        font-size: 2rem;
+        text-align: center;
+       
+        font-weight: bolder;
+        }
+
+       .travel--image{
+          padding:0px;
+       }
+
+      .content--travel ol {
+        color:rgb(42, 42, 42);
+        font-size: 1.5rem;
+       text-align: left;
+       padding:30px;
+      
+        }
+  
+      .travel-title {
+        font-size: x-large;
+        color: var(--colour-grey-dark-3);
+        text-align: center;
+        padding:30px;
+      }
+
+
+
 
 
 
@@ -1278,5 +1550,107 @@ background-color: rgb(249, 249, 249);
   .icon--box{
     padding: 1rem;
   }
+
+
+
+
+/*mega menu*/
+header{padding:20px;}
+
+header label{
+  display:initial;
+}
+  
+/*SIGHTSEEING PAGE*/
+.sightseeing--box{
+  flex-direction: column;
+  margin: 0;
+  /* gap: 0; */
+  height: auto;
+  padding: 1rem;
+}
+
+.sightseeing--card{
+  margin-top: 1rem;
+}
+
+.sightseeing--images{
+  max-width: 100%;
+ }
+
+
+
+
+
+  /* #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  
+  }
+  .menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn span,
+  .menu__btn span::before,
+  .menu__btn span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn  span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn  span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: rgb(138, 138, 138);
+    
+  }
+   */
+  
+
+
+
+
+
 
 }
