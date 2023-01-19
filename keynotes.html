@@ -23,72 +23,86 @@
         </div>
         
         <header class="header">
-            <img src="images/logo-icacie.png" alt="company logo" class="logo">
+          <img src="images/logo-icacie.png" alt="company logo" class="logo">
 
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
-                    <li class="nav__list--item"><a class="nav__list--item--link nav__link--active " href="keynotes.html">Keynotes</a></li>
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="registration.html">Registration</a></li>
-                    <li class="nav__list--item">
-                        
-                        
-                        <div class="dropdown">
-                            <a class="nav__list--item--link">Host 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
+          <div class="nav">
+              <ul class="nav__list">
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
+                  <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="keynotes.html">Keynotes</a></li>
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="registration.html">Registration</a></li>
+                  <li class="nav__list--item">
+                      <div class="dropdown">
+                          <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                          <div class="dropdown-content">
+                              <a href="venue.html">Venue</a>
                               <a href="accomodation.html">Accomodation</a>
                               <a href="sightseeing.html">Sightseeing</a>
                               <a href="travel.html">Travel</a>
-                            </div>
-                          </div> 
-                        
-                        <!-- <a class="nav__list--item--link" href="index.html">Host</a> -->
-                    
-                    
-                    
-                    </li>
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
-                    <li class="nav__list--item">
-                        
-
-                        <div class="dropdown">
-                            <a class="nav__list--item--link">Information 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
+                          </div>
+                      </div>                     
+                  </li>
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
+                  <li class="nav__list--item">                        
+                      <div class="dropdown">
+                          <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
+                          <div class="dropdown-content">
                               <a href="index.html">Sponsors</a>
                               <a href="index.html">Gallery</a>
-                              <a href="index.html">Committee</a>
-                              <a href="index.html">Members</a>
-                              <a href="registration.html">Registration</a>
-                            </div>
+                              <a href="index.html">Committee members</a>
+                              <a href="index.html">Call for papers</a>
+                          </div>
+                      </div> 
+                  </li>
+              </ul>
+
+              <div id="hamburger--box">
+                  <i class="fa-solid fa-bars fa-2x" onclick="menu()"></i>
+                  <ul id="nav__list">
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
+                      <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="keynotes.html">Keynotes</a></li>
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="registration.html">Registration</a></li>
+                      <li class="nav__list--item">
+                          <div class="dropdown">
+                              <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                              <div class="dropdown-content">
+                                  <a href="venue.html">Venue</a>
+                                  <a href="accomodation.html">Accomodation</a>
+                                  <a href="sightseeing.html">Sightseeing</a>
+                                  <a href="travel.html">Travel</a>
+                              </div>
+                          </div>                     
+                      </li>
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
+                      <li class="nav__list--item">                        
+                          <div class="dropdown">
+                              <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
+                              <div class="dropdown-content">
+                                  <a href="index.html">Sponsors</a>
+                                  <a href="index.html">Gallery</a>
+                                  <a href="index.html">Committee members</a>
+                                  <a href="index.html">Call for papers</a>
+                              </div>
                           </div> 
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
 
 
-                        <!-- <a class="nav__list--item--link" href="index.html">Information</a> -->
-                    
-                    
-                    
-                    </li>
-                </ul>
-            </div>
+          <form action="#" class="search">
+              <input type="text" class="search__input" placeholder="Search this site..">
+              <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
 
+          <div class="login">
+              <!-- icon -->
+              <i class="fa-solid fa-arrow-right-to-arc"></i>
+              <a href="login.html" class="login--link">Login</a>
+          </div>
 
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search this site..">
-                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-
-            <div class="nav--profile">
-                <!-- icon -->
-                <i class="fa-solid fa-arrow-right-to-arc"></i>
-                <a href="login.html" class="nav--profile--link">Login</a>
-            </div>
-
-            
-        </header>
+          
+      </header>
 
 
 
@@ -129,7 +143,7 @@
                         Principal Scientist & Distinguished Engineer,
                         TCS Research and Innovation, India
                    </h4>
-
+                  
 
                    <p>Principal Scientist & Distinguished Engineer,
                     TCS Research and Innovation, India<span id="dots">...</span>
@@ -149,8 +163,9 @@
                                 networking and communications. Hemant is also teaching at IIT 
                                 Bhubaneswar (School of Electrical Sciences) as an Adjunct Faculty
                                  since July 2019.</span></p>
+                                 <br>
                                  <button onclick="myFunction()" id="myBtn">Read more</button>
-
+                                  <br>
                     <p><b>Title of the talk: </b> Building Hyper-Connected Networks – the Future of Digital Transformation</p>
                 </div>
             </div>
@@ -173,6 +188,7 @@
                     <p>Principal Scientist & Distinguished Engineer,
                         TCS Research and Innovation, India
                         <br>
+                        <br>
                         <a href="https://faculty.engineering.ucdavis.edu/mohapatra/">Read more</a>
         
                 </div>
@@ -193,26 +209,71 @@
                    </h4>
 
 
-                   <p>CEO, Manjrasoft Pvt Ltd, Melbourne, Australia<span id="dots">...</span>
-                     <span id="more">
-                        Abstract: Computing is being transformed into a model consisting of services that
-                         are delivered in a manner similar to utilities such as water, electricity, gas, 
-                         and telephony. In such a model, users access services based on their requirements
-                          without regard to where the services are hosted or how they are delivered.
-                           The Cloud computing paradigm has turned this vision of “computing utilities”
-                            into a reality. It offers infrastructure, platform, and software as services,
-                             which are made available to consumers as subscription-oriented services.
-                              Cloud application platforms need to offer (1) APIs and tools for the rapid 
-                              creation of elastic applications and (2) a runtime system for the deployment
-                               of applications on geographically distributed Data Centre infrastructures 
-                               (with Quantum computing nodes) in a seamless manner.
-                        </span></p>
-                                 <button onclick="myFunction2()" id="myBtn2">Read more</button>
+                   <p>CEO, Manjrasoft Pvt Ltd, Melbourne, Australia</p>
+                   <br>
+                   
+                   <a href="">Speaker's bio</a>
 
+                    <br>
+                    <br>
                     <p><b>Title of the talk: </b>Title of the talk: Neoteric Frontiers in Cloud, Edge, and Quantum Computing</p>
                 </div>
             </div>
             
+
+            <div class="keynote--speaker">
+              <img src="images/avatar4.jpg" alt="keynote speaker" class="keynote--image">
+              <div class="keynote--text">
+                  <h3>Sudip Misra</h3>
+                 <h4>
+                  Professor, Department of Computer Science and Engineering, Indian Institute of Technology Kharagpur, India
+                 </h4>
+
+
+                 <p>FIEEE, FNASc (India), FNAE (India), FIET (UK), FBCS (UK), FIETE (India), FRSPH (UK)</p>
+                 <br>
+                 
+                 <a href="">Speaker's bio</a>
+
+                 <br>
+                 <br>
+                
+                </div>
+          </div>
+
+
+
+          <h2>Keynote and Invited Speakers in Women in Engineering [WiE]</h2>
+
+          <div class="keynote--speaker">
+            <img src="images/avatar5.jpg" alt="keynote speaker" class="keynote--image">
+            <div class="keynote--text">
+                <h3>Ipsi Ipsita Rath</h3>
+               <h4>
+                Cuttack, India
+               </h4>
+
+
+               <p>FIEEE, FNASc (India), FNAE (India), FIET (UK), FBCS (UK), FIETE (India), FRSPH (UK)</p>
+               <br>
+               
+               <a href="">Speaker's bio</a>
+
+               <br>
+               <br>
+            
+                <p><b>Title of the talk: </b>Women in Engineering: Breaking the Barriers
+
+                </p>
+              
+              </div>
+        </div>
+
+
+
+
+
+
             <br>
 
             
@@ -228,7 +289,7 @@
         
 
               <form action="#" class="newsletter">
-                <input type="text" class="newsletter__input" placeholder="Email address"">
+                <input type="text" class="newsletter__input" placeholder="Email address">
                 <button class="newsletter__button">Join</button>
             </form>
 

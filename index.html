@@ -31,45 +31,62 @@
                     <li class="nav__list--item"><a class="nav__list--item--link" href="keynotes.html">Keynotes</a></li>
                     <li class="nav__list--item"><a class="nav__list--item--link" href="registration.html">Registration</a></li>
                     <li class="nav__list--item">
-                        
-                        
                         <div class="dropdown">
-                            <a class="nav__list--item--link">Host 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
+                            <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
                             <div class="dropdown-content">
                                 <a href="venue.html">Venue</a>
-                              <a href="accomodation.html">Accomodation</a>
-                              <a href="sightseeing.html">Sightseeing</a>
-                              <a href="travel.html">Travel</a>
+                                <a href="accomodation.html">Accomodation</a>
+                                <a href="sightseeing.html">Sightseeing</a>
+                                <a href="travel.html">Travel</a>
                             </div>
-                          </div> 
-                        
-                    
+                        </div>                     
                     </li>
                     <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
-                    <li class="nav__list--item">
-                        
-
+                    <li class="nav__list--item">                        
                         <div class="dropdown">
-                            <a class="nav__list--item--link">Information 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
+                            <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
                             <div class="dropdown-content">
-                              <a href="index.html">Sponsors</a>
-                              <a href="index.html">Gallery</a>
-                              <a href="index.html">Committee members</a>
-                              <a href="index.html">Call for papers</a>
+                                <a href="index.html">Sponsors</a>
+                                <a href="index.html">Gallery</a>
+                                <a href="index.html">Committee members</a>
+                                <a href="index.html">Call for papers</a>
                             </div>
-                          </div> 
-
-
-                        <!-- <a class="nav__list--item--link" href="index.html">Information</a> -->
-                    
-                    
-                    
+                        </div> 
                     </li>
                 </ul>
+
+                <div id="hamburger--box">
+                    <i class="fa-solid fa-bars fa-2x" onclick="menu()"></i>
+                    <ul id="nav__list">
+                        <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="index.html">Home</a></li>
+                        <li class="nav__list--item"><a class="nav__list--item--link" href="keynotes.html">Keynotes</a></li>
+                        <li class="nav__list--item"><a class="nav__list--item--link" href="registration.html">Registration</a></li>
+                        <li class="nav__list--item">
+                            <div class="dropdown">
+                                <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="venue.html">Venue</a>
+                                    <a href="accomodation.html">Accomodation</a>
+                                    <a href="sightseeing.html">Sightseeing</a>
+                                    <a href="travel.html">Travel</a>
+                                </div>
+                            </div>                     
+                        </li>
+                        <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
+                        <li class="nav__list--item">                        
+                            <div class="dropdown">
+                                <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="index.html">Sponsors</a>
+                                    <a href="index.html">Gallery</a>
+                                    <a href="index.html">Committee members</a>
+                                    <a href="index.html">Call for papers</a>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
 
@@ -78,10 +95,10 @@
                 <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
 
-            <div class="nav--profile">
+            <div class="login">
                 <!-- icon -->
                 <i class="fa-solid fa-arrow-right-to-arc"></i>
-                <a href="login.html" class="nav--profile--link">Login</a>
+                <a href="login.html" class="login--link">Login</a>
             </div>
 
             
@@ -118,6 +135,8 @@
             <div class="date--countdown--box">
                 <p id="date"></p>
             </div>
+
+
             <div class="content--box">
                 ICACIE 2022 focuses on both theory and applications in the broad areas of 
                 advanced computing and intelligent engineering. ICACIE is a multidisciplinary
@@ -210,28 +229,28 @@
                     <div class="journal--image--box">
                         <img src="images/computing.jpg" alt="Computing" class="journal--image">
                         <div class="journal--middle">
-                            <div class="journal--name">Alisha Gates</div>
+                            <div class="journal--name"><a href="https://www.inderscience.com/jhome.php?jcode=ijcnds" class="journal__link">Learn more</a></div>
                         </div>
                     </div>
     
                     <div class="journal--image--box">
                         <img src="images/embedded.jpg" alt="" class="journal--image">
                         <div class="journal--middle">
-                            <div class="journal--name">Haider Fowler</div>
+                            <div class="journal--name"><a href="https://www.inderscience.com/jhome.php?jcode=IJCSE" class="journal__link">Learn more</a></div>
                         </div>
                     </div>
     
                     <div class="journal--image--box">
                         <img src="images/network.jpg" alt="" class="journal--image">
                         <div class="journal--middle">
-                            <div class="journal--name">Musa Mcdowell</div>
+                            <div class="journal--name"><a href="https://www.inderscience.com/jhome.php?jcode=IJES" class="journal__link">Learn more</a></div>
                         </div>
                     </div>
     
                     <div class="journal--image--box">
                         <img src="images/science.jpg" alt="" class="journal--image">
                         <div class="journal--middle">
-                            <div class="journal--name">Herbert Moody</div>
+                            <div class="journal--name"><a href="https://www.inderscience.com/jhome.php?jcode=ijhpcn" class="journal__link">Learn more</a></div>
                         </div>
                     </div>
                 </div>
@@ -260,6 +279,21 @@
 
     </div>
 </body>
+
+<script>
+    var navLink = document.getElementById("nav__list");
+
+    function menu(){
+        if(navLink.style.display === "block"){
+            navLink.style.display = "none";
+        }
+        else{
+            navLink.style.display = "block";
+        }
+    }
+</script>
+
+
 <script>
     var myIndex = 0;
     carousel();

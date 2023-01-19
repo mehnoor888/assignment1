@@ -23,61 +23,86 @@
         </div>
         
         <header class="header">
-            <img src="images/logo-icacie.png" alt="company logo" class="logo">
+          <img src="images/logo-icacie.png" alt="company logo" class="logo">
 
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="keynotes.html">Keynotes</a></li>
-                    <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="registration.html">Registration</a></li>
-                    <li class="nav__list--item">
-                        
-                        
-                        <div class="dropdown">
-                            <a class="nav__list--item--link">Host 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
+          <div class="nav">
+              <ul class="nav__list">
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="keynotes.html">Keynotes</a></li>
+                  <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="registration.html">Registration</a></li>
+                  <li class="nav__list--item">
+                      <div class="dropdown">
+                          <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                          <div class="dropdown-content">
+                              <a href="venue.html">Venue</a>
                               <a href="accomodation.html">Accomodation</a>
                               <a href="sightseeing.html">Sightseeing</a>
                               <a href="travel.html">Travel</a>
-                            </div>
-                          </div> 
-                        
-                    </li>
-                    <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
-                    <li class="nav__list--item">
-                        
-
-                        <div class="dropdown">
-                            <a class="nav__list--item--link">Information 
-                              <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-content">
+                          </div>
+                      </div>                     
+                  </li>
+                  <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
+                  <li class="nav__list--item">                        
+                      <div class="dropdown">
+                          <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
+                          <div class="dropdown-content">
                               <a href="index.html">Sponsors</a>
                               <a href="index.html">Gallery</a>
                               <a href="index.html">Committee members</a>
                               <a href="index.html">Call for papers</a>
-                            </div>
+                          </div>
+                      </div> 
+                  </li>
+              </ul>
+
+              <div id="hamburger--box">
+                  <i class="fa-solid fa-bars fa-2x" onclick="menu()"></i>
+                  <ul id="nav__list">
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="index.html">Home</a></li>
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="keynotes.html">Keynotes</a></li>
+                      <li class="nav__list--item"><a class="nav__list--item--link nav__link--active" href="registration.html">Registration</a></li>
+                      <li class="nav__list--item">
+                          <div class="dropdown">
+                              <a class="nav__list--item--link">Host <i class="fa fa-caret-down"></i></a>
+                              <div class="dropdown-content">
+                                  <a href="venue.html">Venue</a>
+                                  <a href="accomodation.html">Accomodation</a>
+                                  <a href="sightseeing.html">Sightseeing</a>
+                                  <a href="travel.html">Travel</a>
+                              </div>
+                          </div>                     
+                      </li>
+                      <li class="nav__list--item"><a class="nav__list--item--link" href="contact.html">Contact</a></li>
+                      <li class="nav__list--item">                        
+                          <div class="dropdown">
+                              <a class="nav__list--item--link">Information <i class="fa fa-caret-down"></i></a>
+                              <div class="dropdown-content">
+                                  <a href="index.html">Sponsors</a>
+                                  <a href="index.html">Gallery</a>
+                                  <a href="index.html">Committee members</a>
+                                  <a href="index.html">Call for papers</a>
+                              </div>
                           </div> 
+                      </li>
+                  </ul>
+              </div>
 
-                        <!-- <a class="nav__list--item--link" href="index.html">Information</a> -->
-                    </li>
-                </ul>
-            </div>
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search this site..">
-                <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+          </div>
 
-            <div class="nav--profile">
-                <!-- icon -->
-                <i class="fa-solid fa-arrow-right-to-arc"></i>
-                <a href="login.html" class="nav--profile--link">Login</a>
-            </div>
 
-            
-        </header>
+          <form action="#" class="search">
+              <input type="text" class="search__input" placeholder="Search this site..">
+              <button class="search__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+
+          <div class="login">
+              <!-- icon -->
+              <i class="fa-solid fa-arrow-right-to-arc"></i>
+              <a href="login.html" class="login--link">Login</a>
+          </div>
+
+          
+      </header>
 
         <div class="content--registration">
 
