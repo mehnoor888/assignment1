@@ -352,7 +352,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45rem;
+  flex-wrap: wrap;
+  /* height: 45rem; */
+  padding: 5rem;
 }
 
 .publicationpartners--image
@@ -445,47 +447,29 @@ font-size: large;
 
   .journal--image {
     opacity: 1;
-    /* display: block; */
     width: 200px;
-    height: auto;
     transition: .5s ease;
-    backface-visibility: hidden;
   }
 
-  .journal--image--box:hover .journal--image{
+  /* .journal--image--box:hover{
     opacity: 0.3;
-  }
-
-  .journal--image--box:hover .journal--image--middle{
-    opacity: 1;
-  }
-
-  .journal--image--middle {
-    transition: .5s ease;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  } */
   
-  .journal--name {
-    background-color: var(--colour-primary-light);
-    color: white;
-    font-size: 16px;
-    width:120px;
-    /* padding: 1rem; */
-    margin-left: 70px;
-    border-radius: 5px;
-  }
-  
-  .journal--name:hover {
-    background-color: var(--colour-footer);
-  }
 
   .journal__link{
     text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--colour-primary-light);
+    padding: 1rem;
     color:white;
+
   }
+
+  .journal__link:hover{
+    color:black;
+    
+  }
+
 
 /*Register page css*/
 
@@ -505,7 +489,7 @@ font-size: large;
   background-color: white;
   border-radius: 10px;
   width: 45rem;
-  height: 45rem;
+  height: 46rem;
   margin: auto;
   padding: 2.5rem;
   cursor: pointer;
@@ -517,16 +501,42 @@ font-size: large;
   font-size: 1.7rem;
 }
 
-.register__form--uname{
-  font-family: inherit;
-  font-size: inherit;
-  color:inherit;
+.register__form--box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.register__form--psw{ 
+.register__form--label{
+  flex: 50%;
+}
+
+.register__form--input{
+  text-align: center;
+  flex: 50%;
+  width: 50%;
   font-family: inherit;
   font-size: inherit;
   color:inherit;
+  padding: 0.5rem;
+}
+
+.register__form--password{
+  text-align: center; 
+  flex: 50%;
+  width: 50%;
+  font-size: inherit;
+  color:inherit;
+  padding: 0.5rem;
+}
+
+.register__form--input:focus{
+  background-color: var( --colour-primary-light);
+}
+
+.register__form--password:focus{
+  background-color: var( --colour-primary-light);
 }
 
 .register__form--submit{
@@ -577,7 +587,6 @@ font-size: large;
 }
 
 
-
 .login--box{
   text-align: center;
   background-color: white;
@@ -591,21 +600,46 @@ font-size: large;
 }
 
 
-
 .login__form{
   font-size: 1.7rem;
 }
 
-.login__form--uname{
-  font-family: inherit;
-  font-size: inherit;
-  color:inherit;
+.login__form--box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.login__form--psw{ 
+.login__form--label{
+  flex: 50%;
+}
+
+.login__form--input{
+  padding: 0.5rem;
+  text-align: center;
+  flex: 50%;
+  width: 50%;
   font-family: inherit;
   font-size: inherit;
-  color:inherit;
+  color: inherit;
+}
+
+.login__form--password{
+  padding: 0.5rem;
+  text-align: center;
+  flex: 50%;
+  width: 50%;
+  font-size: inherit;
+  color: inherit;
+}
+
+.login__form--input:focus{
+  background-color: var(--colour-primary-light);
+}
+
+.login__form--password:focus{
+  background-color: var(--colour-primary-light);
 }
 
 .login__form--submit{
@@ -990,6 +1024,7 @@ background-color: var( --colour-primary-dark);
   font-size: 4rem;
   text-decoration:underline;
 }
+
 .registration--text{
   margin:auto;
   
@@ -1005,6 +1040,10 @@ background-color: var( --colour-primary-dark);
   padding: 1rem;
   margin-top: 5rem;
   margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   /* background-color: black; */
 }
 
@@ -1021,6 +1060,20 @@ background-color: var( --colour-primary-dark);
   border: 1px solid;
 }
 
+.note{
+  padding: 2rem;
+}
+
+.note h3{
+  color: var( --colour-primary-dark);
+  font-size:2rem;
+}
+
+.note h2{
+  color: var( --colour-grey-dark);
+  font-size:1.5rem;
+}
+
 .registration--fee p{
   color: var(  --colour-primary);
   font-size:2.7rem;
@@ -1028,48 +1081,26 @@ background-color: var( --colour-primary-dark);
   text-align: center;
 }
 
-.registration--fee h3{
-  color: var( --colour-primary-dark);
-  font-size:2rem;
 
-}
-
-.registration--fee h2{
-  color: var( --colour-grey-dark);
-  font-size:1.5rem;
-
-}
-
-
-.author--registration--foreigner h3{
-  color: var( --colour-primary-dark);
-  font-size:2rem;
-
-}
-
-.author--registration--foreigner h2{
-  color: var( --colour-grey-dark);
-  font-size:1.5rem;
-
-
-}
-.author--registration--indian{
-  text-decoration: underline;
-}
-
-.author--registration--foreigner p{
-  text-decoration: underline;
+.author--registration--text{
   color: var(  --colour-primary);
-  font-size:2.7rem;
+  font-size: 2.7rem;
+  text-decoration: underline;
   font-weight: bold;
   text-align: center;
 }
 
 
+.column--box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
 
 .columns--registration {
-  float: left;
-  width: 33.3%;
+  flex: 0 0 30%;
   padding: 8px;
 }
 
@@ -1124,29 +1155,38 @@ background-color: var( --colour-primary-dark);
   
  
 }
-.registration--fee-mode h1{
-color:var(--colour-primary-dark);
-font-size: 3rem;
 
+.registration--fee-mode{
+ margin-left: 5rem;
 }
 
-.registration--fee-mode li{
+.mode--title{
+  color:var(--colour-primary-dark);
+  font-size: 3rem;
+}
+
+.mode--list li{
   color:var(--colour-grey-dark);
   font-size: 2rem;
-  
-  }
+}
 
-  .registration--bankdetails--table{
-    text-align: left;
-    width:90%;
-    border-collapse: collapse;
-    border: 1px solid black;
-    font-size:2rem;
-    margin-left: 3%;
-  }
+.registration-bankdetails h1{
+  /* margin-left: 3%; */
+  text-align: center;
+}
+
+.registration--bankdetails--table{
+  text-align: center;
+  width:90%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size:2rem;
+  margin-left: 3%;
+}
   
   .registration--bankdetails--table td, .registration--bankdetails--table th {
     border: 1px solid;
+    padding: 1rem;
   }
   
   .registration--bankdetails--table-info {
@@ -1528,6 +1568,97 @@ text-align: center;
 
 
 
+/*GALLERY PAGES CSS*/
+
+.gallery--box{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item{
+  padding: 1rem;
+  background-color: var(--colour-primary-dark);
+  border-radius: 10px;
+}
+
+.item--text{
+  text-align: center;
+  color:white;
+  font-size: 1.8rem;
+}
+
+
+/*commitee page css*/
+
+.content-commitee h1{
+  text-align: center;
+  color:var(--colour-footer);
+
+}
+
+.members--box{
+  width: 100%;
+  /* text-align: center; */
+  padding: 5rem;
+  font-size: large;
+}
+
+.members--box p{
+  border-bottom: 1px solid rgb(105, 100, 100);
+  padding: 1rem;
+}
+
+.hover--red:hover{
+  background-color:red;
+  color: white;
+}
+
+.hover--green:hover{
+  background-color:green;
+  color: white;
+}
+
+.hover--blue:hover{
+  background-color:blue;
+  color: white;
+}
+
+
+.hover--yellow:hover{
+  background-color:rgb(255, 234, 0);
+  color: white;
+}
+
+
+.hover--purple:hover{
+  background-color:rgb(227, 86, 255);
+  color: white;
+}
+
+.hover--cyan:hover{
+  background-color:rgb(48, 239, 236);
+  color: white;
+}
+
+.hover--beige:hover{
+  background-color:rgb(197, 188, 93);
+  color: white;
+}
+
+.hover--lightgreen:hover{
+  background-color:rgb(81, 255, 50);
+  color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -1580,7 +1711,35 @@ text-align: center;
     margin-top: 1rem;
   }
 
- 
+  .info--slides{
+    max-width: 100%;
+  }
+
+  .publicationpartners{
+    flex-direction: column;
+  }
+
+  .publicationpartners--image{
+    width: 100%;
+    margin: auto;
+  }
+
+  .publicationpartners--content{
+    flex: 1;
+    font-size: medium;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  .journal--box{
+    flex-direction: column;
+  }
+
+  .journal--image--box{
+    padding: 2rem;
+  }
+
+
   .footer--middletext--box{
     margin: 0;
     padding: auto;
@@ -1592,12 +1751,29 @@ text-align: center;
 
   .login--box{
     width: 100%;
+    height: auto;
+    /* border: none; */
   }
 
+  .login__form--box{
+    flex-direction: column;
+  }
+
+  .login__form--input, .login__form--password{
+    width: 60%;
+  }
 
   .register--box{
     width: 100%;
-    height: 55rem;
+    height: auto;
+  }
+
+  .register__form--box{
+    flex-direction: column;
+  }
+
+  .register__form--input, .register__form--password{
+    width: 60%;
   }
 
   .icon--home{
@@ -1614,6 +1790,35 @@ text-align: center;
     margin: auto;
   }
 
+
+  /* REGISTRATION */
+  .registration--detail--box{
+    flex-direction: column;
+  }
+
+  .registration--image{
+    width: 100%;
+  }
+
+  .registration--text--box{
+    margin: auto;
+  }
+
+  .registration--table--box{
+    margin: auto;
+  }
+
+  .registration--table{
+    margin: auto;
+  }
+
+  .column--box{
+    flex-direction: column;
+  }
+
+  .columns--registration{
+    width: 100%;
+  }
 
   /* ACCOMODATION */
   .accomodation--box{
@@ -1677,74 +1882,21 @@ header label{
   margin: auto;
 }
 
-  /* #menu__toggle {
-    opacity: 0;
-  }
-
-  #menu__toggle:checked ~ .menu__box {
-    left: 0 !important;
+ /* GALLERY */
+ .gallery--box{
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+ }
   
-  }
-  .menu__btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .menu__btn span,
-  .menu__btn span::before,
-  .menu__btn span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
-    transition-duration: .25s;
-  }
-  .menu__btn  span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn  span::after {
-    content: '';
-    top: 8px;
-  }
-  .menu__box {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: #ECEFF1;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
-  }
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-  }
-  .menu__item:hover {
-    background-color: rgb(138, 138, 138);
-    
-  }
-   */
-  
+.gallery--image{
+  width: 100%;
+}
 
-
-
+.item{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 
 

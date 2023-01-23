@@ -20,13 +20,17 @@
 
     <div class="login--box">
       <form action="#" class="login__form">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" class="login__form--uname" required>
+
+        <div class="login__form--box">
+          <label for="uname" class="login__form--label"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" class="login__form--input" required>
+        </div>
         <br>
-        <br>
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" class="login__form--psw" required>
-        <br>
+        <div class="login__form--box">
+          <label for="psw" class="login__form--label"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" class="login__form--password" required>
+        </div>
+
         <br>
         <label>
           <input type="checkbox" checked="checked" name="remember" class="login__form--checkbox"> Remember me
@@ -57,6 +61,20 @@
     <div class="copyright">
       <p class="copyright__p">Copyright &copy; 2022; Powered By Mehnoor. All rights reserved</p>
     </div>
+
+
+    <script>
+      var navLink = document.getElementById("nav__list");
+  
+      function menu(){
+          if(navLink.style.display === "block"){
+              navLink.style.display = "none";
+          }
+          else{
+              navLink.style.display = "block";
+          }
+      }
+  </script>
 
 </body>
 </html>

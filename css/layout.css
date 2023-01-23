@@ -44,7 +44,7 @@
 }
 
 .content--login{
-    height: 50rem;
+    /* height: 50rem; */
     /* padding-top: 3.5rem; */
     padding: 5rem;
   }
@@ -59,10 +59,8 @@
 }
 
 .content--register{
-    /* height: 45rem; */
-    /* padding-top: 3.5rem; */
     padding: 5rem;
-  }
+}
 
 /* REGISTRATION */
 /* .content--registration{
