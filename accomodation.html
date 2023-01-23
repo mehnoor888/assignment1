@@ -181,18 +181,18 @@
         </div>
 
 
-    <footer class="footer">
-        <img src="images/logo-icacie.png" alt="company logo" class="footer--logo">
-        <div class="footer--middletext--box">
-            <h2 class="footer--middletext">12 DAYS SINCE ICACIE 2022</h2>
-        </div>
-        
+        <footer class="footer">
+            <img src="images/logo-icacie.png" alt="company logo" class="footer--logo">
+            <div class="footer--middletext--box">
+                <h2 class="footer--middletext">12 DAYS SINCE ICACIE 2022</h2>
+            </div>
+            
 
-        <form action="#" class="newsletter">
-            <input type="text" class="newsletter__input" placeholder="Email address">
-            <button class="newsletter__button">Join</button>
-        </form>
-    </footer>
+            <form action="#" class="newsletter">
+                <input type="text" class="newsletter__input" placeholder="Email address">
+                <button class="newsletter__button">Join</button>
+            </form>
+        </footer>
     
     <div class="copyright">
         <p class="copyright__p">Copyright &copy; 2022; Powered By Mehnoor. All rights reserved</p>
@@ -200,5 +200,18 @@
 
     </div>
 </body>
+
+<script>
+    var navLink = document.getElementById("nav__list");
+
+    function menu(){
+        if(navLink.style.display === "block"){
+            navLink.style.display = "none";
+        }
+        else{
+            navLink.style.display = "block";
+        }
+    }
+</script>
 
 </html>
